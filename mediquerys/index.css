@@ -1,0 +1,95 @@
+@media only screen and (max-width:1000px) {
+  header{
+    position: relative;
+  }
+  header ul{
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 400px;
+    background-color:#a7a9be;
+    top: 0px;
+    right: 0;
+    display: none;
+  }
+  .mostrar{
+    display: unset;
+  }
+  header ul li{
+    padding-top: 10px;
+    /* background-color: aquamarine; */
+    margin-top: 10px;
+    text-align: center;
+
+  }
+  header ul li a{
+    margin: 10px 0;
+    font-size: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  p{
+    text-align: center;
+    grid-column: 4/8;
+    /* display: none; */
+  }
+  p:hover{
+    color: white;
+  }
+
+  .fa-bars{
+    grid-column: 9/10;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  .fa-bars:hover{
+    background-color:#ff8906 ;
+    cursor: pointer;
+  }
+  body{
+    background-color: #fffffe;
+  }
+  .mostrar{
+    display: unset;
+  }
+  .ocultar{
+    display: none;
+  }
+}
+
+
+/*  aca ba el responsive telefono*/
+@media only screen and (max-width:360px){
+
+  p{
+    display: none;
+  }
+  header ul{
+    position: fixed;
+    height: 100%;
+    width: 180px;
+    top: 0;
+    right: 0;
+  }
+  header ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+
+
+
+}
+
+
+
+
+
