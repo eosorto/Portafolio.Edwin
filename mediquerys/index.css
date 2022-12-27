@@ -3,20 +3,23 @@
     position: relative;
   }
   header ul{
-    position: absolute;
+    position: fixed;
     display: grid;
-    width: 100%;
-    height: 400px;
-    background-color:#a7a9be;
-    top: 0px;
+    width: 300px;
+    height: 500px;
+    background-color:#3d3f53;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
     right: 0;
-    display: none;
+    border-radius: 0 0 0 15px;
+   transform: translate(150%);
   }
   .mostrar{
-    display: unset;
+    transform: translate(0);
   }
   header ul li{
-    padding-top: 10px;
+    padding: 16px 0;
     /* background-color: aquamarine; */
     margin-top: 10px;
     text-align: center;
@@ -30,12 +33,12 @@
     align-items: center; */
   }
 
-  p{
+  .header-p{
     text-align: center;
     grid-column: 4/8;
     /* display: none; */
   }
-  p:hover{
+  .header-p:hover{
     color: white;
   }
 
@@ -56,19 +59,14 @@
   body{
     background-color: #fffffe;
   }
-  .mostrar{
-    display: unset;
-  }
-  .ocultar{
-    display: none;
-  }
+ 
 }
 
 
 /*  aca ba el responsive telefono*/
 @media only screen and (max-width:360px){
 
-  p{
+  .header-p{
     display: none;
   }
   header ul{
